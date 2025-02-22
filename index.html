@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nullfinity Hedge Strategies</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Nullfinity Trade Facilities Pvt Ltd</h1>
+        <p>Predefined Hedge Trading Strategies</p>
+    </header>
+
+    <section class="strategies">
+        <div class="strategy">
+            <h2>Bull Call Spread</h2>
+            <p>Buy 1 ATM Call & Sell 1 OTM Call</p>
+            <button onclick="showDetails('bull-call')">View Details</button>
+        </div>
+
+        <div class="strategy">
+            <h2>Bear Put Spread</h2>
+            <p>Buy 1 ATM Put & Sell 1 OTM Put</p>
+            <button onclick="showDetails('bear-put')">View Details</button>
+        </div>
+
+        <div class="strategy">
+            <h2>Iron Butterfly</h2>
+            <p>Sell ATM Call & Put, Buy OTM Call & Put</p>
+            <button onclick="showDetails('iron-butterfly')">View Details</button>
+        </div>
+    </section>
+
+    <div id="details" class="hidden">
+        <h3>Strategy Details</h3>
+        <p id="strategy-info"></p>
+        <button onclick="closeDetails()">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
